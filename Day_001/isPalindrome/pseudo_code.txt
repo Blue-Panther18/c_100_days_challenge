@@ -1,0 +1,24 @@
+function isPalindrome(number):
+    // Convert the number to a string
+    numberString = convertToString(number)
+    
+    // Get the length of the string
+    length = lengthOfString(numberString)
+    
+    // Initialize pointers for the first and last characters of the string
+    start = 0
+    end = length - 1
+    
+    // Iterate until the pointers meet in the middle
+    while start < end:
+        // Compare characters at the current pointers
+        if numberString[start] is not equal to numberString[end]:
+            // The number is not a palindrome
+            return false
+        
+        // Move the pointers towards the center
+        start = start + 1
+        end = end - 1
+    
+    // If the loop completes, the number is a palindrome
+    return true
